@@ -10,6 +10,11 @@ app.get('/api/greet', (req, res) => {
     res.json({ message: 'Hello from the backend!' });
 });
 
+app.post('/api/echo', (req, res) => {
+    const { name, email } = req.body;
+    res.json({ message: `Received data for ${name} (${email})` });
+});
+
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
