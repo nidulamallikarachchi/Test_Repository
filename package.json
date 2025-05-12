@@ -1,10 +1,26 @@
 {
-  "name": "Test_Repository",
+  "name": "test_repository",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "private": true
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nidulamallikarachchi/Test_Repository.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nidulamallikarachchi/Test_Repository/issues"
+  },
+  "homepage": "https://github.com/nidulamallikarachchi/Test_Repository#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
 }
